@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello LoginController!{% endblock %}
+
+{% block body %}
+<form method="post" action="{{ url('app_login') }}">
+    <label for="email">Email: </label>
+    <input type="email" required id="email" name="_email"/>
+
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="_password"/>
+
+    <button type="submit">Sign in</button>
+</form>
+{% endblock %}
